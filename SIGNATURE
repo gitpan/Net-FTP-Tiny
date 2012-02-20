@@ -1,0 +1,41 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.68.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 1836a9c8f56463104259bddeb5578b84106ce509 .gitignore
+SHA1 cff40da710f8da5ade3e30ffe54030f7ca3c7891 Build.PL
+SHA1 9e8a4fb1079663533ea46229dfc2a01c7872da9a Changes
+SHA1 ee2a6e0e6d6511e3e0a53f2d0615d48baa183a72 MANIFEST
+SHA1 67c6d65dfafe449ee93b06767603adb708ae45ef META.json
+SHA1 667b351509f42050a10ba4fc2b091e55727972b1 META.yml
+SHA1 2157ae40589595d6cc1585fd7279b25bcf8f5852 Makefile.PL
+SHA1 f849d5b5b59a9007b5770b093ae876441793a4a2 README
+SHA1 82214548dd296700404c5a738d4f5e0c19863da5 lib/Net/FTP/Tiny.pm
+SHA1 1251f4db7dfa35ece0025b4b8cb32c9f13dade64 t/dependency.t
+SHA1 c45fd2506f5311376485f34157fabbf68de50f24 t/get_cpan.at
+SHA1 39bc50959d14911338187c3fe9ca7beeadb6b54d t/get_cpan_noip.at
+SHA1 cdd247f7cbaf9e2c195efbb707ed3443af1b0d2e t/parse_ftp_url.t
+SHA1 904d9a4f76525e2303e4b0c168c68230f223c8de t/pod_cvg.t
+SHA1 65c75abdef6f01a5d1588a307f2ddfe2333dc961 t/pod_syn.t
+SHA1 86da39c9cd43c353f9218a9f8ba8703df15de09c t/setup_noip.pl
+SHA1 1de2cb22e40e13c960506b4d8de312bbc6fdae28 t/upgraded.t
+SHA1 74f1ba5786e068c7f5f07206cf1a22e459e405ba t/use.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iEYEARECAAYFAk9CsMYACgkQOV9mt2VyAVG0dgCfRjvrC60hvos6rWvGM5Jey3bs
+RGEAoI8cjazxsOOxEJ26l2+HUuGDP6R8
+=hckv
+-----END PGP SIGNATURE-----
