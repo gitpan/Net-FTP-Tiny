@@ -1,7 +1,7 @@
 use warnings;
 use strict;
 
-use Test::More tests => 91;
+use Test::More tests => 185;
 
 use Net::FTP::Tiny ();
 
@@ -160,19 +160,37 @@ foreach my $hostname (qw(
 	a--3
 	10.1.2.3
 	100.0.255.1
+	10.1.2.10
+	10.1.2.99
+	10.1.2.100
+	10.1.2.199
+	10.1.2.200
+	10.1.2.249
+	10.1.2.250
+	10.1.2.255
+	255.255.255.255
 	[::]
 	[::1]
 	[123::]
 	[fd12:3456:789a::3]
+	[fd12:3456:789a::3:4]
 	[2001:D0C0:3:4:5:6:7:8]
 	[::ffff:10.1.2.3]
 	[v0.oh_hai]
 )) {
+	parse_ok "ftp://$hostname", {
+		host => $hostname,
+		port => 21,
+	};
 	parse_ok "ftp://$hostname/baz", {
 		host => $hostname,
 		port => 21,
 		dirs => [],
 		filename => "baz",
+	};
+	parse_ok "ftp://$hostname:22", {
+		host => $hostname,
+		port => 22,
 	};
 }
 
